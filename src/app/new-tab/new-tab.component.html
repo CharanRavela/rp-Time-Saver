@@ -1,0 +1,19 @@
+<form class="form" [formGroup]="form" (ngSubmit)="submit()">
+    
+    <mat-form-field class="full-width"  appearance="outline" color="accent">
+        
+        <mat-label>Paste here:</mat-label>
+        
+        <textarea matInput id="area" placeholder="Ex. Google..." formControlName="listString"></textarea>
+  
+        <mat-error *ngIf="form.get('listString').hasError('required')">
+  
+            Paste here someting.
+  
+        </mat-error>
+  
+    </mat-form-field><br><br>
+  
+    <button mat-raised-button color="accent">Go for it</button>
+  
+</form>

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    color: #69f0ae;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer{
+   color: #69f0ae;
+   border-top: 1px solid #69f0ae;
+   margin-top:16px;
+   padding: 16px 0;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #69f0ae;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+    
+}
+
+header a{
+    color: #69f0ae;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.icon{
+    width: 64px;
+    margin-top: 16px;
+}
+
+html, body {
+    min-height: 100%;
+    height: auto;
+}
+html, body { background: #303030; height: 100%; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
