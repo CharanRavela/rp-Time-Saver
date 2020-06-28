@@ -57,11 +57,11 @@ export class NewTabComponent implements OnInit {
 
       setTimeout( () => {
         this.listArray.forEach( async element =>{
-          await console.log(this.count);
+          // await console.log(this.count);
           await window.open(`https://www.google.com/search?q=${element}`,'_blank');
-          await this.count++;
+          // await this.count++;
         });
-        console.log(this.listArray);
+        // console.log(this.listArray);
         this.listArray = [];
       },1000);
     }
