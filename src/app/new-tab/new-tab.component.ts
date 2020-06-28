@@ -49,12 +49,13 @@ export class NewTabComponent implements OnInit {
 
     }
 
-    if( this.listArray.length != 0){
+    if( this.listArray.length > 1){
 
       // let body ={
       //   data: this.listArray
       // }
 
+      this.openSnackBar("Opening Tabs!", "Enjoy!");
       setTimeout( () => {
         this.listArray.forEach( async element =>{
           // await console.log(this.count);
